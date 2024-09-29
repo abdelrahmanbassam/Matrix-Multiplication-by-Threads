@@ -1,3 +1,5 @@
+# Untitled
+
 # Matrix Multiplication (Multi-Threading)
 
 ## Overview
@@ -24,16 +26,12 @@ To compile and run the matrix multiplication program:
 ### Compilation:
 
 ```bash
-bash
-Copy code
 gcc -pthread -o matMultp MatrixMultiplication.c
 ```
 
 ### Execution:
 
 ```bash
-bash
-Copy code
 ./matMultp Mat1 Mat2 MatOut
 ```
 
@@ -46,8 +44,6 @@ If no arguments are provided, the default input files are `a.txt` for matrix A, 
 ### Example:
 
 ```bash
-bash
-Copy code
 ./matMultp a b c
 ```
 
@@ -80,8 +76,6 @@ The program outputs three text files representing the results of the matrix mult
 Each output file follows this format:
 
 ```bash
-txt
-Copy code
 Method: [Description of the method]
 row=x col=z
 [Resulting matrix]
@@ -90,8 +84,6 @@ row=x col=z
 Example:
 
 ```bash
-txt
-Copy code
 Method: A thread per row
 row=2 col=2
 1 2
@@ -130,11 +122,8 @@ For each method, the program prints the following statistics to the console:
 The program uses the following code to measure execution time:
 
 ```bash
-c
-Copy code
 #include <sys/time.h>struct timeval stop, start;
-gettimeofday(&start, NULL);
-// Your code here
+gettimeofday(&start, NULL)
 gettimeofday(&stop, NULL);
 
 printf("Seconds taken %lu\n", stop.tv_sec - start.tv_sec);
@@ -201,7 +190,7 @@ Microseconds taken: 2000
 ### Output File: `c_per_matrix.txt`
 
 ```php
-Method: A thread per matrix
+Method A thread per matrix
 row=3 col=3
 58 64 69
 139 154 169
